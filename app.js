@@ -61,7 +61,7 @@
   /* ---------- Waitlist form ---------- */
   // Drop a real endpoint URL here when you're ready (Formspree, Buttondown, your serverless fn, etc.).
   // While null, the form simulates a successful signup so the UX is intact.
-  var WAITLIST_ENDPOINT = null;
+  var WAITLIST_ENDPOINT = 'https://formspree.io/f/xbdwleeg';
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   function wireWaitlist() {
