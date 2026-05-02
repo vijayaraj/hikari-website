@@ -1,0 +1,337 @@
+<!doctype html>
+  <html>
+    <head>…<link rel="stylesheet" href="styles.css">…</head>
+
+    <body>
+    <div class="app">
+      <!-- ===== Mobile sticky top bar ===== -->
+      <div class="mobile-bar">
+        <a href="#hero" class="brand" aria-label="Hikari home">
+          <span class="word">hikari</span>
+          <span class="kanji font-jp" aria-hidden="true">光</span>
+        </a>
+        <div class="right">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ===== Fixed left identity panel (desktop) ===== -->
+      <aside class="left-panel" aria-label="Hikari identity">
+        <div class="lp-top">
+          <div>
+            <div class="lp-wordmark">
+              <span class="word">hikari</span>
+              <span class="kanji font-jp" aria-hidden="true">光</span>
+            </div>
+          </div>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+
+        <div class="lp-mid">
+          <p class="lp-tagline">
+            A voice-first workout tracker for people chasing<span class="accent"> their own light</span>.
+          </p>
+
+          <div class="lp-block">
+            <span class="lp-section-label">Join the waitlist</span>
+            <form class="waitlist" novalidate>
+              <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="row">
+                <label class="sr-only" for="waitlist-email-desktop">Email address</label>
+                <input id="waitlist-email-desktop" class="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@somewhere.com" />
+                <button type="submit" class="submit">Join the waitlist</button>
+              </div>
+              <div class="msg idle">No spam. One note when Hikari opens.</div>
+            </form>
+          </div>
+
+          <div class="lp-block">
+            <span class="lp-section-label">Apps - coming soon</span>
+            <div class="store-row">
+              <span class="store-badge" aria-disabled="true" title="Coming soon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:1rem;height:1rem"><path d="M16.365 1.43c0 1.14-.421 2.09-1.262 2.85-.84.76-1.846 1.22-2.92 1.16-.063-1.07.388-2.13 1.207-2.9.82-.78 1.95-1.26 2.975-1.11zM21 17.05c-.51 1.18-.76 1.71-1.42 2.76-.92 1.46-2.22 3.27-3.83 3.28-1.43.02-1.8-.93-3.74-.92-1.95.01-2.36.93-3.79.92-1.61-.01-2.84-1.65-3.76-3.11C2.31 16.97 2 12.6 4.06 10.31c1.07-1.21 2.78-1.96 4.39-1.99 1.49-.03 2.9.99 3.74.99.84 0 2.55-1.21 4.3-1.04.73.03 2.78.29 4.1 2.21-3.6 1.97-3.02 6.84.41 6.57z"/></svg>
+                <span class="stack">
+                  <span class="soon">Soon on</span>
+                  <span>App Store</span>
+                </span>
+              </span>
+              <span class="store-badge" aria-disabled="true" title="Coming soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1rem;height:1rem"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <span class="stack">
+                  <span class="soon">Soon on</span>
+                  <span>Google Play</span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lp-bottom">
+          <div class="socials">
+            <a class="icon-btn" href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a class="icon-btn" href="mailto:hello@hikari.app" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+          <div class="fk-footer">
+            <span class="font-jp accent">光</span>
+            <span>#talkyourworkout</span>
+            <span class="sep">|</span>
+            <span>made with <span class="accent">♥</span> in chennai</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ===== Right: scrollable story ===== -->
+      <main class="story">
+
+        <!-- 01 Hero -->
+        <section id="hero" class="section">
+          <div class="eyebrow reveal">
+            <span class="num">01</span>
+            <span class="rule" aria-hidden="true"></span>
+            <span>Introducing Hikari</span>
+          </div>
+          <div class="hero-wrap">
+            <div class="accent-glow hero-glow" aria-hidden="true"></div>
+
+            <h1 class="h1 reveal">
+              talk your workout.<br/>
+              <span class="accent">see your light.</span>
+            </h1>
+
+            <p class="lead reveal">
+              Hikari is a voice-first workout tracker. Speak your sets the way you'd
+              tell a training partner - Hikari logs the reps, weight, and the session, then
+              turns every session into clear, kind insight.
+            </p>
+
+            <div class="hero-mic-row reveal">
+              <div class="mic-visual" aria-hidden="true">
+                <span class="ring1"></span>
+                <span class="ring2"></span>
+                <span class="core">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                </span>
+              </div>
+              <div class="hero-mic-text">
+                <span class="small">Tap. Talk. Done.</span>
+                <span class="desc">"Bench press, 80 kilos, 8 reps." That's the whole interaction.</span>
+              </div>
+            </div>
+
+            <a href="#voice" class="hero-cta reveal">
+              See how it works
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- 02 Voice logging -->
+        <section id="voice" class="section">
+          <div class="eyebrow reveal">
+            <span class="num">02</span><span class="rule" aria-hidden="true"></span><span>Voice workout logging</span>
+          </div>
+          <div class="split">
+            <div>
+              <h2 class="h2 reveal">Just talk. <span class="accent">We log.</span></h2>
+              <p class="lead reveal">
+                Tapping numbers between sets breaks flow. Hikari listens, parses,
+                and confirms - exercise, weight, sets, reps. Edit anything with a
+                tap. The dumbbells stay in your hands.
+              </p>
+              <ul class="feature-list reveal">
+                <li><span class="dash" aria-hidden="true"></span><span>Natural phrasing - pounds or kilos, sets or singles.</span></li>
+                <li><span class="dash" aria-hidden="true"></span><span>Classify each set: warmup, working, or drop.</span></li>
+                <li><span class="dash" aria-hidden="true"></span><span>Powered by modern AI models for accurate transcript parsing.</span></li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <div class="phone-wrap">
+                <div class="accent-glow glow" aria-hidden="true"></div>
+                <div class="phone">
+                  <div class="notch" aria-hidden="true"></div>
+                  <span class="tick tl" aria-hidden="true"></span>
+                  <span class="tick tr" aria-hidden="true"></span>
+                  <span class="tick bl" aria-hidden="true"></span>
+                  <span class="tick br" aria-hidden="true"></span>
+                  <div class="placeholder">
+                    <span class="label">Voice logging</span>
+                    <span style="font-size:0.75rem">placeholder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 Tracking essentials -->
+        <section id="tracking" class="section">
+          <div class="eyebrow reveal">
+            <span class="num">03</span><span class="rule" aria-hidden="true"></span><span>Tracking essentials</span>
+          </div>
+          <div style="max-width: 48rem">
+            <h2 class="h2 reveal">The basics, <span class="accent">done well</span>.</h2>
+            <p class="lead reveal">
+              No gimmicks - just the core tools every lifter expects, kept quiet and out of the way.
+            </p>
+          </div>
+
+          <div class="cards reveal">
+            <div class="card">
+              <div class="head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.74 9.74 0 0 0-6.74 2.74L3 8"/><polyline points="3 3 3 8 8 8"/><line x1="12" y1="7" x2="12" y2="12"/><polyline points="12 12 15 14"/></svg>
+                <span class="title">Exercise history</span>
+              </div>
+              <p>Tap any exercise to see every past session, set by set.</p>
+            </div>
+            <div class="card">
+              <div class="head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                <span class="title">Personal records</span>
+              </div>
+              <p>Auto-tracked PRs for every lift - weight, reps, and volume.</p>
+            </div>
+            <div class="card">
+              <div class="head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <span class="title">Set classification</span>
+              </div>
+              <p>Mark sets as warmup, working, or drop - by voice or tap.</p>
+            </div>
+            <div class="card">
+              <div class="head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                <span class="title">Online-first parsing</span>
+              </div>
+              <p>Modern AI models turn your voice into structured sets.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 Body metrics -->
+        <section id="metrics" class="section">
+          <div class="eyebrow reveal">
+            <span class="num">04</span><span class="rule" aria-hidden="true"></span><span>Body metrics &amp; strength</span>
+          </div>
+          <div class="split">
+            <div>
+              <h2 class="h2 reveal">Watch the line <span class="accent">bend</span>.</h2>
+              <p class="lead reveal">
+                Log your height and weight, and watch your bodyweight curve over
+                time on one calm chart. Strength-vs-bodyweight progress overlays land in a
+                future update.
+              </p>
+              <ul class="feature-list reveal">
+                <li><span class="dash" aria-hidden="true"></span><span>Track weight over time.</span></li>
+                <li><span class="dash" aria-hidden="true"></span><span>Weight progress chart, kept simple.</span></li>
+                <li><span class="dash" aria-hidden="true"></span><span><span class="foreground">Soon:</span> strength progress vs bodyweight progress and AI session insights.</span></li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <div class="phone-wrap">
+                <div class="accent-glow glow" aria-hidden="true"></div>
+                <div class="phone">
+                  <div class="notch" aria-hidden="true"></div>
+                  <span class="tick tl" aria-hidden="true"></span>
+                  <span class="tick tr" aria-hidden="true"></span>
+                  <span class="tick bl" aria-hidden="true"></span>
+                  <span class="tick br" aria-hidden="true"></span>
+                  <div class="placeholder">
+                    <span class="label">Weight chart</span>
+                    <span style="font-size:0.75rem">placeholder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 Diet (coming soon) -->
+        <section id="diet" class="section">
+          <div class="eyebrow reveal">
+            <span class="num">05</span><span class="rule" aria-hidden="true"></span><span>Diet - coming soon</span>
+          </div>
+          <div style="max-width: 48rem">
+            <span class="pill reveal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21 3 17c1.5-1.5 3-2 5-2 1 0 2 .5 3 1.5"/><path d="M21 3c-3 0-6 1-9 4S8 14 8 17c3 0 7-1 10-4s4-7 4-10z"/></svg>
+              On the roadmap
+            </span>
+
+            <h2 class="h2 reveal" style="margin-top: 1.5rem">Balance is <span class="accent">the point</span>.</h2>
+
+            <p class="lead reveal">
+              Hikari means <span class="font-jp accent">光</span> -
+              <em style="font-style: normal; color: var(--foreground)"> light</em> in Japanese.
+              I chose it because progress isn't only what you lift; it's also what
+              you eat, how you rest, the small daily turning toward better.
+            </p>
+            <p class="lead reveal" style="max-width: 40rem">
+              Voice-first diet tracking is next. Tell Hikari what you ate the way
+              you'd tell a friend, and watch your training and nutrition share a
+              single story.
+            </p>
+          </div>
+        </section>
+
+        <!-- 06 Waitlist -->
+        <section id="waitlist" class="section last">
+          <div class="eyebrow reveal">
+            <span class="num">06</span><span class="rule" aria-hidden="true"></span><span>Waitlist</span>
+          </div>
+          <div style="max-width: 36rem">
+            <h2 class="h2 reveal">Be early to <span class="accent">the light</span>.</h2>
+            <p class="lead reveal">
+              Hikari is in private build. Drop your email and we'll send a single,
+              quiet note when it's time to come in.
+            </p>
+            <div class="reveal" style="margin-top: 2.5rem">
+              <form class="waitlist" novalidate>
+                <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div class="row">
+                  <label class="sr-only" for="waitlist-email-mobile">Email address</label>
+                  <input id="waitlist-email-mobile" class="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@somewhere.com" />
+                  <button type="submit" class="submit">Join the waitlist</button>
+                </div>
+                <div class="msg idle">No spam. One note when Hikari opens.</div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Mobile-only footer -->
+          <div class="mobile-footer">
+            <div class="socials">
+              <a class="icon-btn" href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </a>
+              <a class="icon-btn" href="mailto:hello@hikari.app" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </div>
+            <div class="fk-footer">
+              <span class="font-jp accent">光</span>
+              <span>#talkyourworkout</span>
+              <span class="sep">|</span>
+              <span>made with <span class="accent">♥</span> in chennai</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
