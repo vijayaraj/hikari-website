@@ -176,11 +176,11 @@ main.story { padding: 0; }
 .icon-btn {
   display: inline-flex; align-items: center; justify-content: center;
   width: 2rem; height: 2rem;
-  border: 1px solid var(--border); border-radius: 0.5rem;
+  border-radius: 0.5rem;
   color: var(--text-secondary);
-  transition: color 200ms, border-color 200ms;
+  transition: color 200ms;
 }
-.icon-btn:hover { color: var(--accent); border-color: color-mix(in oklab, var(--accent) 50%, transparent); }
+.icon-btn:hover { color: var(--accent); }
 .icon-btn svg { width: 0.875rem; height: 0.875rem; }
 
 .theme-toggle {
@@ -462,6 +462,15 @@ section.section.last { border-bottom: 0; }
   .reveal { transform: none; transition: opacity 400ms ease; }
   .mic-visual .ring1 { animation: none; }
 }
+
+/* Mobile-only panel inside hero: tagline + waitlist + app badges */
+.mobile-hero-panel {
+  margin-top: 3rem;
+  display: flex; flex-direction: column; gap: 2rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+@media (min-width: 1024px) { .mobile-hero-panel { display: none; } }
 
 /* Mobile-only footer block at the bottom of waitlist section */
 .mobile-footer {
