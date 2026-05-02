@@ -78,7 +78,7 @@ ul { list-style: none; }
 
 /* ---------- Layout: fixed left + scrollable right ---------- */
 
-.app { min-height: 100vh; }
+.app { min-height: 100vh; overflow-x: hidden; }
 
 .left-panel {
   display: none;
@@ -259,7 +259,6 @@ section.section.last { border-bottom: 0; }
 }
 
 /* Hero */
-.hero-wrap { position: relative; }
 .accent-glow {
   pointer-events: none;
   background: radial-gradient(
@@ -267,10 +266,6 @@ section.section.last { border-bottom: 0; }
     color-mix(in oklab, var(--accent) 14%, transparent) 0%,
     transparent 60%
   );
-}
-.hero-glow {
-  position: absolute; left: -8rem; top: -6rem;
-  width: 480px; height: 480px;
 }
 
 .hero-mic-row {

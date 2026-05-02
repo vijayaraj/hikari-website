@@ -1,6 +1,15 @@
 <!doctype html>
   <html>
-    <head>…<link rel="stylesheet" href="styles.css">…</head>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Hikari — a voice-first workout tracker. Speak your sets. See your progress." />
+      <title>hikari 光 — talk your workout</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
     <body>
     <div class="app">
@@ -103,38 +112,55 @@
             <span class="rule" aria-hidden="true"></span>
             <span>Introducing Hikari</span>
           </div>
-          <div class="hero-wrap">
-            <div class="accent-glow hero-glow" aria-hidden="true"></div>
+          <div class="split">
+            <div class="hero-wrap">
+              <h1 class="h1 reveal">
+                talk your workout.<br/>
+                <span class="accent">see your light.</span>
+              </h1>
 
-            <h1 class="h1 reveal">
-              talk your workout.<br/>
-              <span class="accent">see your light.</span>
-            </h1>
+              <p class="lead reveal">
+                Hikari is a voice-first workout tracker. Speak your sets the way you'd
+                tell a training partner - Hikari logs the reps, weight, and the session, then
+                turns every session into clear, kind insight.
+              </p>
 
-            <p class="lead reveal">
-              Hikari is a voice-first workout tracker. Speak your sets the way you'd
-              tell a training partner - Hikari logs the reps, weight, and the session, then
-              turns every session into clear, kind insight.
-            </p>
-
-            <div class="hero-mic-row reveal">
-              <div class="mic-visual" aria-hidden="true">
-                <span class="ring1"></span>
-                <span class="ring2"></span>
-                <span class="core">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
-                </span>
+              <div class="hero-mic-row reveal">
+                <div class="mic-visual" aria-hidden="true">
+                  <span class="ring1"></span>
+                  <span class="ring2"></span>
+                  <span class="core">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                  </span>
+                </div>
+                <div class="hero-mic-text">
+                  <span class="small">Tap. Talk. Done.</span>
+                  <span class="desc">"Bench press, 80 kilos, 8 reps." That's the whole interaction.</span>
+                </div>
               </div>
-              <div class="hero-mic-text">
-                <span class="small">Tap. Talk. Done.</span>
-                <span class="desc">"Bench press, 80 kilos, 8 reps." That's the whole interaction.</span>
-              </div>
+
+              <a href="#voice" class="hero-cta reveal">
+                See how it works
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              </a>
             </div>
 
-            <a href="#voice" class="hero-cta reveal">
-              See how it works
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </a>
+            <div class="reveal">
+              <div class="phone-wrap">
+                <div class="accent-glow glow" aria-hidden="true"></div>
+                <div class="phone">
+                  <div class="notch" aria-hidden="true"></div>
+                  <span class="tick tl" aria-hidden="true"></span>
+                  <span class="tick tr" aria-hidden="true"></span>
+                  <span class="tick bl" aria-hidden="true"></span>
+                  <span class="tick br" aria-hidden="true"></span>
+                  <div class="placeholder">
+                    <span class="label">Hikari app</span>
+                    <span style="font-size:0.75rem">placeholder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
