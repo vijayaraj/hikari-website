@@ -48,7 +48,7 @@
             A voice-first workout tracker for people chasing<span class="accent"> their own light</span>.
           </p>
 
-          <div class="lp-block">
+          <div class="lp-block waitlist-block">
             <span class="lp-section-label">Join the waitlist</span>
             <form class="waitlist" novalidate>
               <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -61,8 +61,7 @@
             </form>
           </div>
 
-          <div class="lp-block">
-            <span class="lp-section-label">Apps - coming soon</span>
+          <div class="lp-block apps-block">
             <div class="store-row">
               <span class="store-badge" aria-disabled="true" title="Coming soon">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:1rem;height:1rem"><path d="M16.365 1.43c0 1.14-.421 2.09-1.262 2.85-.84.76-1.846 1.22-2.92 1.16-.063-1.07.388-2.13 1.207-2.9.82-.78 1.95-1.26 2.975-1.11zM21 17.05c-.51 1.18-.76 1.71-1.42 2.76-.92 1.46-2.22 3.27-3.83 3.28-1.43.02-1.8-.93-3.74-.92-1.95.01-2.36.93-3.79.92-1.61-.01-2.84-1.65-3.76-3.11C2.31 16.97 2 12.6 4.06 10.31c1.07-1.21 2.78-1.96 4.39-1.99 1.49-.03 2.9.99 3.74.99.84 0 2.55-1.21 4.3-1.04.73.03 2.78.29 4.1 2.21-3.6 1.97-3.02 6.84.41 6.57z"/></svg>
@@ -108,6 +107,8 @@
 
         <!-- 01 Hero -->
         <section id="hero" class="section">
+          <span class="hero-watermark font-jp" aria-hidden="true">光</span>
+
           <div class="eyebrow reveal">
             <span class="num">01</span>
             <span class="rule" aria-hidden="true"></span>
@@ -135,7 +136,10 @@
               </div>
               <div class="hero-mic-text">
                 <span class="small">Tap. Talk. Done.</span>
-                <span class="desc">"Bench press, 80 kilos, 8 reps." That's the whole interaction.</span>
+                <span class="desc">
+                  <span class="quote-line">"<span class="typed" data-typed-cycle="Bench press, 80 kilos, 8 reps.|Squat, 100 kilos, 5 reps.|Deadlift, 120 kilos, 3 reps.">&nbsp;</span>"</span>
+                  <span class="quote-tail">That's the whole interaction.</span>
+                </span>
               </div>
             </div>
 
@@ -244,9 +248,9 @@
             <h2 class="h2 reveal" style="margin-top: 1.5rem">Balance is <span class="accent">the point</span>.</h2>
 
             <p class="lead reveal">
-              Hikari means <span class="font-jp accent">光</span> -
+              Hikari <span class="font-jp accent">光</span> -
               <em style="font-style: normal; color: var(--foreground)"> light</em> in Japanese.
-              I chose it because progress isn't only what you lift; it's also what
+              Progress isn't only what you lift, it's also what
               you eat, how you rest, the small daily turning toward better.
             </p>
             <p class="lead reveal" style="max-width: 40rem">
@@ -304,6 +308,6 @@
         </section>
       </main>
     </div>
+    <script src="app.js?v=2"></script>
   </body>
-  <script src="app.js"></script>
 </html>

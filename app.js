@@ -136,10 +136,64 @@
     });
   }
 
+  /* ---------- Typed transcript (continuous loop) ---------- */
+  function wireTyped() {
+    var els = document.querySelectorAll('[data-typed], [data-typed-cycle]');
+    if (els.length === 0) return;
+
+    // Multiple phrases per element via data-typed-cycle="phrase 1 | phrase 2 | ..."
+    function phrasesFor(el) {
+      var cycle = el.getAttribute('data-typed-cycle');
+      if (cycle) return cycle.split('|').map(function (s) { return s.trim(); }).filter(Boolean);
+      return [el.getAttribute('data-typed') || ''];
+    }
+
+    function loop(el) {
+      var phrases = phrasesFor(el);
+      var phraseIdx = 0;
+
+      function typePhrase() {
+        var full = phrases[phraseIdx];
+        el.textContent = '';
+        var i = 0;
+
+        function typeStep() {
+          if (i >= full.length) {
+            // Hold the finished phrase, then erase
+            setTimeout(eraseStep, 1800);
+            return;
+          }
+          el.textContent += full.charAt(i++);
+          var prev = full.charAt(i - 1);
+          var delay = prev === ',' ? 220 : prev === '.' ? 280 : 45 + Math.random() * 50;
+          setTimeout(typeStep, delay);
+        }
+
+        function eraseStep() {
+          var current = el.textContent;
+          if (current.length === 0) {
+            phraseIdx = (phraseIdx + 1) % phrases.length;
+            setTimeout(typePhrase, 450);
+            return;
+          }
+          el.textContent = current.slice(0, -1);
+          setTimeout(eraseStep, 24);
+        }
+
+        setTimeout(typeStep, 250);
+      }
+
+      typePhrase();
+    }
+
+    Array.prototype.forEach.call(els, loop);
+  }
+
   function init() {
     wireToggles();
     wireReveals();
     wireWaitlist();
+    wireTyped();
   }
 
   if (document.readyState === 'loading') {
